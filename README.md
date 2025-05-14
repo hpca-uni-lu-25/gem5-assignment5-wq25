@@ -4,10 +4,9 @@ Editor:
 Title: Virtual Memory Translation Cache Designs
 ---
 
-**Due on 3/3 11:59 pm (PST)**: See [Submission](#submission) for details
-
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Research Question](#research-question)
 - [Workloads](#workloads)
@@ -22,7 +21,7 @@ Title: Virtual Memory Translation Cache Designs
   - [Step III: Basic Performance Analysis](#step-iii-basic-performance-analysis)
   - [Step IV: Design Space Exploration](#step-iv-design-space-exploration)
   - [Answering the Research Question](#answering-the-research-question)
-  - [Next Steps (Required 201A, Extra Credit 154B)](#next-steps-required-201a-extra-credit-154b)
+  - [Next Steps](#next-steps)
 - [Hints](#hints)
   - [Useful stats](#useful-stats)
 - [Submission](#submission)
@@ -46,7 +45,7 @@ buffers (TLBs) and page walk caches.
 
 ## Research Question
 
-**Should we allocate area to a TLB or to the page walk cache?**
+**Should we allocate area to a TLB or do the page walk cache?**
 
 To answer this question, you will need to simulate different configurations of
 TLBs and page walk caches and measure their impact on system performance.
@@ -233,7 +232,7 @@ Assume that the area difference of the larger TLB and the larger page walk cache
 is the same. (This is approximately true for the configurations we are using
 since the TLB will be fully associative and requires a lower access time.)
 
-### Next Steps (Required 201A, Extra Credit 154B)
+### Next Steps
 
 1. How would your conclusions change if the workloads used huge pages (2MB)
    instead of regular 4KB pages?
@@ -296,6 +295,7 @@ You will submit this assignment via GitHub Classroom.
 2. Create a Codespace for the assignment on your repository
 3. Fill out the `questions.md` file
 4. Commit your changes
+5. Submit the questions.md file in Moodle
 
 Make sure you include both your runscript, an explanation of how to use your
 script, and the answers to the questions in the `questions.md` file.
@@ -315,8 +315,8 @@ directory (`virtual-memory/`).
 
 ## Grading
 
-- **25 points** gem5 runscript and explanation of how to use your script
-- **50 points** for the questions in the report
+- **20 points** gem5 runscript and explanation of how to use your script
+- **45 points** for the questions in the report
 - **25 points** for the research question
 - **10 points** for the next steps
 
